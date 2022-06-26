@@ -1,0 +1,6 @@
+{
+  "name": "creativejs",
+  "scripts": {
+    "dev": "tsc --watch"
+  }
+}
