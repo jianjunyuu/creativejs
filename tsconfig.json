@@ -1,4 +1,8 @@
 {
+  "include": [
+    "packages/*/src/**/*.ts",
+    "packages/*/__tests__/**/*.ts"
+  ],
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": ".",
@@ -24,7 +28,6 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "removeComments": false,
-    "lib": ["esnext", "dom"],
-    "types": []
+    "lib": ["esnext", "dom"]
   }
 }

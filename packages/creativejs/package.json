@@ -1,6 +1,23 @@
 {
   "name": "creativejs",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "browser": "./dist/creativejs.esm-browser.js",
+      "import": "./dist/creativejs.mjs"
+    },
+    "./package.json": "./package.json",
+    "./dist/*": "./dist/*"
+  },
+  "main": "index.js",
+  "module": "dist/creativejs.mjs",
+  "unpkg": "dist/creativejs.iife.js",
+  "jsdelivr": "dist/creativejs.iife.js",
+  "types": "dist/creativejs.d.ts",
   "scripts": {
-    "dev": "tsc --watch"
+    "dev": "rollup -c ../../rollup.config.js --watch",
+    "dev:dts": "node ../../scripts/buildDts.mjs",
+    "build": "rollup -c ../../rollup.config.js",
+    "build:dts": "api-extractor run --local --verbose"
   }
 }

@@ -1,0 +1,2 @@
+#  ignore files of API Extractor Generating API docs
+*.api.md
