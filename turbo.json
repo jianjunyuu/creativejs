@@ -2,14 +2,10 @@
   "$schema": "https://turborepo.org/schema.json",
   "baseBranch": "origin/main",
   "pipeline": {
-    "play": {
-      "dependsOn": ["dev", "dev:dts"]
-    },
-    "dev:dts": {
-      "dependsOn": ["^dev"]
-    },
     "dev": {
+      "dependsOn": ["dev1"]
     },
+    "dev1": {},
     "lint": {},
     "build": {
       "dependsOn": ["^build"]

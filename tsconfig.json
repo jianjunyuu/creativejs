@@ -10,8 +10,8 @@
     "sourceMap": false,
     "noEmit": true,
 
-    "target": "esnext",
-    "module": "esnext",
+    "target": "es6",
+    "module": "ES2015",
     "moduleResolution": "node",
     "allowJs": false,
     "skipLibCheck": true,

@@ -3,21 +3,16 @@
   "sideEffects": false,
   "exports": {
     ".": {
-      "browser": "./dist/creativejs.esm-browser.js",
-      "import": "./dist/creativejs.mjs"
+      "browser": "./dist/index.global.js",
+      "import": "./dist/index.mjs"
     },
     "./package.json": "./package.json",
     "./dist/*": "./dist/*"
   },
-  "main": "index.js",
-  "module": "dist/creativejs.mjs",
-  "unpkg": "dist/creativejs.iife.js",
-  "jsdelivr": "dist/creativejs.iife.js",
-  "types": "dist/creativejs.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "dev": "rollup -c ../../rollup.config.js --watch",
-    "dev:dts": "node ../../scripts/buildDts.mjs",
-    "build": "rollup -c ../../rollup.config.js",
-    "build:dts": "api-extractor run --local --verbose"
+    "dev1": "tsup --config ../../tsup.config.ts --watch"
   }
 }
