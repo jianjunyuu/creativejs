@@ -16,18 +16,18 @@ const outputConfigs = {
     file: pkg.module,
     format: 'es',
   },
-  cjs: {
-    file: pkg.module.replace('mjs', 'cjs'),
-    format: 'cjs',
-  },
-  global: {
-    file: pkg.unpkg,
-    format: 'iife',
-  },
-  browser: {
-    file: 'dist/creativejs.esm-browser.js',
-    format: 'es',
-  },
+  // cjs: {
+  //   file: pkg.module.replace('mjs', 'cjs'),
+  //   format: 'cjs',
+  // },
+  // global: {
+  //   file: pkg.unpkg,
+  //   format: 'iife',
+  // },
+  // browser: {
+  //   file: 'dist/creativejs.esm-browser.js',
+  //   format: 'es',
+  // },
 }
 
 const tsPlugin = ts({

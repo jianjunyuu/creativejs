@@ -12,10 +12,8 @@ const dist = path.resolve(process.cwd(), 'dist/creativejs.mjs')
 const run = (bin, args, opts = {}) =>
   execa(bin, args, { stdio: 'inherit', ...opts })
 
-console.log('dddddd')
 // One-liner for current directory
 chokidar.watch(dist).on('all', (event) => {
-  console.log('event', event)
   if (event === 'change')
     run('pnpm', ['run', 'build:dts'])
 })
